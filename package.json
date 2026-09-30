@@ -1,0 +1,40 @@
+{
+  "name": "mtc-digital-student-pass",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Prototype of the MTC Digital Student Concession Pass. Browser-only demo — no database required.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "node scripts/build-demo.mjs",
+    "build:server": "next build",
+    "build:static": "STATIC_EXPORT=1 npx next build",
+    "start": "next start",
+    "preview:static": "npx --yes serve out -l 3000",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "pack": "node scripts/pack-project.mjs"
+  },
+  "dependencies": {
+    "dotenv": "17.3.1",
+    "drizzle-orm": "0.45.2",
+    "lucide-react": "^1.46.0",
+    "next": "16.2.6",
+    "pg": "8.20.0",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "4.1.17",
+    "@types/node": "22.19.15",
+    "@types/pg": "8.18.0",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "drizzle-kit": "0.31.10",
+    "eslint": "9.39.4",
+    "eslint-config-next": "16.2.6",
+    "postcss": "8.5.8",
+    "tailwindcss": "4.1.17",
+    "typescript": "5.9.3"
+  }
+}
